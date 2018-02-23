@@ -1,0 +1,488 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/bs/css/bootstrap.min.css">
+	<script type="text/javascript" src="__PUBLIC__/bs/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../Public/css/header.css">
+</head>
+<style type="text/css">
+	.fxed{
+		width: 100%;
+		height: 60px;
+		padding-left: 70px;
+		padding-right: 110px;
+		background:white; 
+	}
+	.f-left{
+		width: 200px;
+		height: 60px;
+		line-height: 60px;
+		display:inline-block;
+	}
+	.f-left a{
+		display: inline-block;
+		margin-left: 14px;
+		color: black;
+	}
+	.f-left .a-3{
+		color: #7e7e7e;
+	}
+	.a-3:hover{
+		color: black;
+	}
+
+	.f-right{
+		width: 120px;
+		height: 45px;
+		background:red;
+		display: inline-block;
+		float: right;
+		margin-top: 8px;
+		border-radius: 5px;
+		text-align: center;
+	}
+	.f-right a{
+		display: inline-block;
+		width: 100px;
+		line-height: 45px;
+		color: white;
+		font-size: 13px;
+	}
+
+
+	.center{
+		width: 100%;
+		height:59vw;
+	}
+
+	.center-bg{
+		width: 100%;
+		height:100%;
+		background-image: url('__PUBLIC__/image/white.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.center-text{
+		width: 50%;
+		height: 100%;
+		float: right;
+		text-align: center;
+	}
+	.center-text img{
+		margin-top: 45%;
+	}
+
+
+
+
+
+	.video-big{
+		margin-top: 80px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.video{
+		width: 100%;
+		height: 40vw;
+		background: red;
+		background: url('__PUBLIC__/image/three.jpg') no-repeat center;
+		background-size: 100% 100%;
+		padding-top:17%; 
+	}
+
+	.icon{
+		width: 100%;
+		height: 80px;
+		text-align: center;
+		justify-content: space-around;
+		align-items: center;
+		display: flex;
+	}
+	.icon-a{
+		display: inline-block;
+		cursor: pointer;
+		width: 80px;
+		height: 80px;
+		background:url('__PUBLIC__/image/video-icon.png') no-repeat center;
+		background-size: 100% 100%;
+		margin-left: 13%;
+		margin-right: 13%;
+	}
+
+
+	.text{
+		width: 100%;
+		height: 350px;
+		text-align: center;
+		margin-top: 50px;
+		padding-top: 40px;
+	}
+	.text p{
+		font-size: 19px;
+	}
+	.text h1{
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+	.text a{
+		display: inline-block;
+		width: 100px;
+		color: black;
+		font-size: 18px;
+		border-bottom: 2px solid black;
+		transition-property:all;
+		transition-duration: 0.2s;
+	}
+	.text a:hover{
+		color:red;
+		border-bottom: 2px solid red;
+		width: 130px;
+	}
+
+
+
+
+
+	.game{
+		width: 100%;
+		height: 45vw;
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+	}
+	.game-bg{
+		width:100%;
+		height:99%;
+		background: url('__PUBLIC__/image/bg(4).jpg') no-repeat center;
+		background-size:100% 100%;
+	}
+	.bg-left{
+		display: inline-block;
+		float: left;
+		height:44.5vw;
+		background:white;
+		position: relative;
+	}
+	.bg-left:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: -10px;
+        top: 0;
+        background: url('__PUBLIC__/image/radius-10.svg') no-repeat left top;
+        }
+	.bg-right{
+		display: inline-block;
+		float: right;
+		height: 44.5vw;
+		background: white;
+		position: relative;
+	}
+	.bg-right:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          left: -10px;
+          top: 0;
+          background: url('__PUBLIC__/image/radius-10 (1).svg') no-repeat left top;
+          transform: rotate(90deg);
+        }
+	.is-max{
+		width:0%;
+	}
+	
+
+
+	.bg-2{
+		width:100%;
+		height:99%;
+		background: url('__PUBLIC__/image/bg(1).jpg') no-repeat center;
+		background-size:100% 100%;
+	}
+
+
+
+	.bg-3{
+		width:100%;
+		height:99%;
+		background: url('__PUBLIC__/image/bg.jpg') no-repeat center;
+		background-size:100% 100%;
+	}
+
+
+	.bg-4{
+		width:100%;
+		height:99%;
+		background: url('__PUBLIC__/image/bg (2).jpg') no-repeat center;
+		background-size:100% 100%;
+	}
+
+
+	.bg-5{
+		width:100%;
+		height:99%;
+		background: url('__PUBLIC__/image/bg (3).jpg') no-repeat center;
+		background-size:100% 100%;
+	}
+
+	.text-5{
+		margin-bottom: 50px;
+	}
+
+	.jumbotron{
+		text-align: center;
+	}
+</style>
+<body>
+	<div class="header">
+			<div class="logo">
+				<a href="__APP__/Index/index.html"><img src="__PUBLIC__/image/logo.png" height="50"></a>
+			</div>
+			<div class="nav">
+				<ul class="nav-ul">
+					<li class="li-1">
+						<a href="__APP__/Index//T">OnePlus 5T</a>
+					</li>
+					<li>
+						<a href="#">商城</a>
+					</li>
+					<li>
+						<a href="#">服务</a>
+					</li>
+					<li>
+						<a href="#">博客</a>
+					</li>
+					<li>
+						<a href="#">论坛</a>
+					</li>
+				</ul>
+			</div>
+			<div class="user">
+				<a href="#">
+					<span class="glyphicon glyphicon-search"></span>
+
+				</a>
+				<a href="#">
+					<span class="glyphicon glyphicon-shopping-cart"></span>
+				</a>
+				<a href="__APP__/User/regist.html">
+					<span class="glyphicon glyphicon-user"></span>
+				</a>
+			</div>
+		</div>
+
+	
+	<div class="fxed">
+		<div class="f-left">
+			<a href="#">OnePlus 5T</a>   
+			<a href="#">概述</a>  
+			<a href="#" class="a-3">参数</a>
+		</div>
+		<div class="f-right">
+			<a href="#">购买</a>
+		</div>
+	</div>
+
+
+
+	<div class="center">
+		<div class="center-bg">
+			<div class="center-text">
+				<img src="__PUBLIC__/image/oneplus5t.svg" width="50%">
+				<h2>￥2999 起</h2>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="video-big">
+		<div class="video">
+			<div class="icon">
+				<a href="http://103.41.141.117/657250BCBB03078CF60474F2C/03000A01005A4DE9A478981484E848AE720C71-BC54-7C21-90FB-13408E32C1D6.mp4?ccode=0512&duration=40&expire=18000&psid=bcf409c01f94b5fafcd2136386f8c9e7&ups_client_netip=65f76f8c&ups_ts=1518008537&ups_userid=&utid=tDekEtVWNzYCAWX3b%2F1yLXVt&vid=XMzI5MDgzNDMyOA%3D%3D&vkey=A4f3edf7d506c6f883242baa5335d173b" class="icon-a"></a>
+				<a href="http://103.41.141.151/6573D4E4F2C497D7F14E4310C/03000A01005A1CE05DB9D31484E848E3F0933A-C8DA-9AAF-EE89-4D40377C2C3A.mp4?ccode=0512&duration=41&expire=18000&psid=89e3fa2644ff87fbe72d92dbc2603ed3&ups_client_netip=65f76f8c&ups_ts=1518008610&ups_userid=&utid=tDekEtVWNzYCAWX3b%2F1yLXVt&vid=XMzE5MDA0NTgxNg%3D%3D&vkey=A56276c4809a820ccebd7a6521b4f5d96" class="icon-a"></a>
+				<a href="http://103.41.141.202/69740B007F73D7B3F480728B7/03000A01005A0D5894332A1484E848BCABBA60-DBDF-A7AE-7995-BCDA6DF58A88.mp4?ccode=0512&duration=60&expire=18000&psid=874bafc5aa985db154fb3c03d6af6c77&ups_client_netip=65f76f8c&ups_ts=1518008632&ups_userid=&utid=tDekEtVWNzYCAWX3b%2F1yLXVt&vid=XMzE2MTY4ODM4OA%3D%3D&vkey=A77b763e69855fb7d435c1c62fdf07cdc" class="icon-a"></a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="text">
+		<p>性能 & 体验</p>
+		<h1>骁龙 835 处理器 + 8GB 大内存。</h1>
+		<p>超强超省电的处理器，超大的内存，超快的双通道闪存，超多的好用功能......拥有如此强劲的</p>
+		<p>OnePlus 5T，在你手里只会凝结成一个字：爽。</p>
+		<a href="#">了解更多</a>
+	</div>
+
+
+
+
+	<div class="game">
+		<div class="game-bg">
+			<div class="bg">
+				<div class="bg-left"></div>
+				<div class="bg-right"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="text">
+		<p>高清双摄</p>
+		<h1>人像更漂亮，夜拍更出色。</h1>
+		<p>OnePlus 5T 的拍照更棒了，除了后置 2000 万+1600 万高清双摄，双核对焦。还有双 f/1.7 大光圈，</p>
+		<p>自动 HDR 逆光拍摄，强大的专业模式。更有全新升级人像模式 2.0 和纯净夜拍。</p>
+		<a href="#">了解更多</a>
+	</div>
+
+
+	<div class="game">
+		<div class="game-bg bg-2">
+			<div class="bg">
+				<div class="bg-left"></div>
+				<div class="bg-right"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="text">
+		<p>全面屏</p>
+		<h1>一用上，就会爱上。</h1>
+		<p>全面屏拥有更大的显示面积，更舒适的显示模式，更沉浸的全面屏体验。其充满未来</p>
+		<p>感的显示效果，让你一旦用上它，就离不开它。</p>
+		<a href="#">了解更多</a>
+	</div>
+
+
+
+	<div class="game">
+		<div class="game-bg bg-3">
+			<div class="bg">
+				<div class="bg-left"></div>
+				<div class="bg-right"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="text">
+		<p>Dash 闪充</p>
+		<h1>边玩边闪充，好用到无可替代。</h1>
+		<p>有了 Dash 闪充，你再也不用担心续航。不管你息屏还是亮屏充电，都非常快速、安</p>
+		<p>全。看片追剧，游戏开黑，精彩不断电。你用上了，就再也回不去了。</p>
+		<a href="#">了解更多</a>
+	</div>
+
+
+
+	<div class="game">
+		<div class="game-bg bg-4">
+			<div class="bg">
+				<div class="bg-left"></div>
+				<div class="bg-right"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="text text-5">
+		<p>网络</p>
+		<h1>更全面的信号覆盖，</h1>
+		<h1>更快速的网络连接。</h1>
+		<p>多达 6 模 35 频网络制式，全球主流地区 4G + 网络，出国不用换手机。双卡双待，2 </p>
+		<p>X 2 MIMO 双路 WiFi，信号覆盖更广泛，上网更快。</p>
+		<a href="#">了解更多</a>
+	</div>
+
+
+
+	<div class="game">
+		<div class="game-bg bg-5">
+			<div class="bg">
+				<div class="bg-left"></div>
+				<div class="bg-right"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="jumbotron">
+		<h1>模仿版</h1>
+	</div>
+	
+</body>
+<script type="text/javascript">
+	//定位顶部
+	$(window).scroll(function(){
+    	$t=$(window).scrollTop();
+
+        if($t>70){
+            $('.fxed').css('position','fixed');
+            $('.fxed').css('margin-top','-80px');
+
+        }else{
+            $('.fxed').css('position','');
+            $('.fxed').css('margin-top','');
+        }
+    })
+
+
+  $(window).on('scroll', function () {
+          var winWidth = $(window).width(),
+              winHeight = $(window).height(),
+              scrollTop = $(window).scrollTop();
+          showFullImg(winWidth, winHeight, scrollTop);
+          
+        });
+
+	function showFullImg(winWidth,winHeight,scrollTop){
+		$('.game-bg').each(function () {
+		var percent, originPercent,
+                rate =0.5,
+                originWidthRate =0.20,
+                offsetTop = $(this).offset().top,
+                diffHeight = (winHeight + scrollTop) - offsetTop;
+            originPercent = originWidthRate * 100 + '%';
+            if (offsetTop <= scrollTop + winHeight) {
+              percent = (winWidth * originWidthRate - diffHeight * rate) / winWidth * 100 + '%';
+
+               if (parseInt(percent) <= 0) {
+               	 	$(this).find('.bg-left, .bg-right').addClass('is-max');
+
+               }else{
+               		$(this).find('.bg-left, .bg-right').removeClass('is-max');
+               }
+              		$(this).find('.bg-left, .bg-right').width(percent);
+
+          }else{
+              	$(this).find('.bg-left, .bg-right').width(originPercent);
+          }
+      })
+	}
+		
+
+</script>
+</html>
